@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,400;0,900;1,700&display=swap");
+* {
+  font-family: "roboto Condensed";
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  width: 333px;
+  margin-left: 40px;
+  margin-top: 517px;
+  position: absolute;
+}
+
+.menu-button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu span {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-left: 12px;
+  line-height: 10px;
+  vertical-align: middle;
+}
+
+i {
+  color: white;
+  font-size: 35px;
+}
+
+#open {
+  margin-left: 110px;
+}
+
+#close {
+  visibility: collapse;
+  position: relative;
+}
+
+.menu.active .menu-button {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  transition: all 0.2s;
+}
+
+.menu.active #open {
+  visibility: collapse;
+}
+
+.menu.active span {
+  visibility: collapse;
+}
+
+.menu.active #close {
+  visibility: visible;
+  transform: translateX(-70px);
+}
+
+.menu-list {
+  align-items: center;
+  height: 235px;
+  width: 333px;
+  top: 291px;
+  left: 48px;
+  position: absolute;
+  background: black;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  visibility: collapse;
+}
+
+.menu-list ul {
+  display: block;
+  align-items: center;
+  margin-left: -27px;
+}
+
+.menu-list ul li {
+  list-style: none;
+  font-style: italic;
+  font-weight: 900;
+  text-align: center;
+  font-size: 28px;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.menu-list ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-list.active {
+  visibility: visible;
+}
+
+.menu-list .wrapper ul li button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: white;
+  font-style: italic;
+  font-weight: 900;
+  text-align: center;
+  font-size: 28px;
+  left: 17px;
+  position: relative;
+  cursor: pointer;
+}
+.menu-list .wrapper ul li button i {
+  position: relative;
+  left: 74px;
+  top: 2px;
+  font-size: 25px;
+}
+
+.shop-list {
+  position: absolute;
+  left: 338px;
+  top: -40px;
+  transition: all 0.15s;
+  visibility: collapse;
+}
+
+.shop-list li a {
+  color: rgb(255, 255, 255);
+}
+
+.shop-list li a i {
+  position: relative;
+  right: 74px;
+  top: 2px;
+  font-size: 25px;
+}
+
+.shop-list.active {
+  visibility: visible;
+  transform: translateX(118px);
+}
+
+.translate {
+  transition: all 0.3s ease;
+}
+
+.translate.active {
+  transform: translateX(-328px);
+}
+
+.menu-list.shop {
+  padding-top: 50px;
+  top: 221px;
+  height: 262px;
+}
+
+.top-btn {
+  padding-bottom: 18px;
+  left: -10px;
+  position: relative;
+}
+
+#arrow-right2 {
+  position: relative;
+  left: 44px;
+  top: 2px;
+  font-size: 25px;
+}
+
+.lb-list {
+  position: absolute;
+  left: 430px;
+  top: 6px; 
+  transition: all 0.15s;
+  visibility: collapse;
+}
+
+.lb-list.active {
+  visibility: visible;
+}
+
+.lb-list li a i {
+  position: relative;
+  right: 54px;
+  top: 2px;
+  font-size: 25px;
+}
+
+.menu-list.lb {
+  top: 344px;
+  height: 182px;
+}
+
